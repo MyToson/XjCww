@@ -16,6 +16,7 @@ const getdata = function(option){
       viewName: Random.cword(4, 16),
       personName: Random.cname(),
       reason: Random.csentence(10, 32),
+      img:Random.image('200x100', '#ffcc33', '#FFF', 'png', '!')
     }
     datalist.push(o)
   }
