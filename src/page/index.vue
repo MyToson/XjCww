@@ -2,7 +2,7 @@
   <div class="index">
     <HelloWorld>
       <template slot="head" scope="prop">
-        <div>嚓嚓{{prop.myMsg}}</div>
+        <div>一封信{{prop.myMsg}}</div>
       </template>
       <div slot="lop">jjj</div>
     </HelloWorld>
