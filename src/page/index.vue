@@ -15,9 +15,13 @@
 </template>
 
 <script>
+  import Test from '../mixins/test';
   import {getUser} from "../http/api";
   import HelloWorld from '../components/hello-world';
   export default {
+    mixins:[
+      Test
+    ],
     components:{
       HelloWorld
     },
@@ -28,9 +32,11 @@
     },
     mounted(){
       getUser().then((res) => {
+        console.log(res.data);
         const {list} = this;
         list.push(...res.data)
-      })
+      });
+      this.look();
     }
   }
 </script>
