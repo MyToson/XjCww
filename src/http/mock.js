@@ -5,7 +5,7 @@ Mock.setup({
 });
 const getdata = function(option){
   let datalist = []
-  for (let i = 0; i < 20; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     const o = {
       recipeId: Random.guid(),
       billId: Random.string(10),
@@ -16,6 +16,7 @@ const getdata = function(option){
       viewName: Random.cword(4, 16),
       personName: Random.cname(),
       reason: Random.csentence(10, 32),
+      img:Random.image('200x100', '#ffcc33', '#FFF', 'png', '!')
     }
     datalist.push(o)
   }
