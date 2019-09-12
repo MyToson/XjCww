@@ -1,6 +1,6 @@
 <template>
   <div class="hello-world">
-    <h1>我是子组剑</h1>
+    <h1>情书</h1>
     <slot name="head" :myMsg="msg"></slot>
     <slot name="lop"></slot>
   </div>
