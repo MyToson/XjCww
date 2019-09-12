@@ -5,7 +5,7 @@ Mock.setup({
 });
 const getdata = function(option){
   let datalist = []
-  for (let i = 0; i < 20; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     const o = {
       recipeId: Random.guid(),
       billId: Random.string(10),
