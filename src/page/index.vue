@@ -4,7 +4,7 @@
       <template slot="head" scope="prop">
         <div>一封信{{prop.myMsg}}</div>
       </template>
-      <div slot="lop">jjj</div>
+      <div slot="lop">成都小酒馆</div>
     </HelloWorld>
     <div v-for="(item,index) in list"
          class="image"
@@ -43,6 +43,7 @@
 
 <style scoped lang="scss">
   .index{
+    text-align: center;
     .image{
       margin-bottom: 20px;
     }
