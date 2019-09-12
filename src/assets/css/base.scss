@@ -1,0 +1,193 @@
+/*
+* Description:基础样式定义文件
+* Author:柯妙旋
+* Update:
+*/
+@import "./variable.scss";
+@import "./reset.scss";
+@import "./element-common.scss";
+
+
+@for $i from 1 through 200 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+
+  .m-h-#{$i} {
+    margin-left: #{$i}px;
+    margin-right: #{$i}px;
+  }
+
+  .m-v-#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+  }
+
+  .m-t-#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .m-b-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+
+  .m-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .m-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+
+  .p-h-#{$i} {
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+
+  .p-v-#{$i} {
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+  }
+
+  .p-t-#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .p-b-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+
+  .p-l-#{$i} {
+    padding-left: #{$i}px;
+  }
+
+  .p-r-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+// 字体 10-50 偶数
+@for $i from 5 through 25 {
+  $j: 2*$i;
+
+  .f-#{$j} {
+    font-size: #{$j}px;
+  }
+}
+
+
+//宽度1-20
+@for $i from 1 through 20 {
+  .w-#{$i} {
+    width: #{$i}px;
+  }
+}
+
+//宽度20-100 偶数
+@for $i from 11 through 50 {
+  $j: 2*$i;
+
+  .w-#{$j} {
+    width: #{$j}px;
+  }
+}
+
+//宽度150-800 step 50
+@for $i from 3 through 16 {
+  $j: 50*$i;
+
+  .w-#{$j} {
+    width: #{$j}px;
+  }
+}
+
+//
+@for $i from 0 through 10 {
+  .o-#{$i} {
+    opacity: #{$i/10};
+  }
+}
+
+.a-c {
+  text-align: center;
+}
+
+.a-r {
+  text-align: right;
+}
+
+.a-l {
+  text-align: left;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.b-o {
+  border: 1px solid $border-color;
+}
+
+.b-b {
+  border-bottom: 1px solid $border-color;
+}
+
+.b-t {
+  border-top: 1px solid $border-color;
+}
+
+.b-r {
+  border-right: 1px solid $border-color;
+}
+
+.b-l {
+  border-left: 1px solid $border-color;
+}
+
+
+
+.h-100p {
+  height: 100%;
+}
+
+.w-100p {
+  width: 100%;
+}
+
+.ov-a {
+  overflow: auto;
+}
+
+.ov-h {
+  overflow: hidden;
+}
+
+.display-none {
+  display: none;
+}
+.c-white {
+  color: white;
+}
+.c-info {
+  color: $color-info;
+}
+
+.c-danger {
+  color: $color-danger;
+}
+.c-success {
+  color: $color-success;
+}
+
+.c-warning {
+  color: $color-warning;
+}
+
+.c-primary {
+  color: $color-primary;
+}
+
